@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:submission1dicoding/pages/account.dart';
-import 'package:submission1dicoding/pages/more.dart';
-import 'package:submission1dicoding/pages/nftlist.dart';
+import 'package:submission1dicoding/pages/Profile.dart';
+import 'package:submission1dicoding/pages/NftLists.dart';
+import 'package:submission1dicoding/pages/Home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,9 +32,8 @@ class _HomePageState extends State<HomePage> {
   int currentIndex = 0;
 
   final screen = [
-    const NftList(),
-    const Account(),
-    const More(),
+    const Home(),
+    const Profile(),
   ];
 
   @override
@@ -60,11 +59,6 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.account_circle),
               label: 'Profile',
             ),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.menu,
-                ),
-                label: 'More')
           ]),
     );
   }

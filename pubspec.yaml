@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.17.6 <3.0.0"
+  sdk: ">=2.18.0 <3.3.1"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -73,7 +73,32 @@ flutter:
     - images/NEWBANNER2.jpg
     - images/eth.png
     - images/footer.jpg
-    - images/giftmint.jpg
+    - images/artbaby.jpg
+    - images/alif2.jpg
+    - images/bandaged.jpg
+    - images/arash.jpg
+    - images/jefri.jpg
+    - images/kawaki.jpg
+    - images/mario.jpg
+    - images/kakashi.jpg
+    - images/kagura.jpg
+    - images/lingard.jpg
+    - images/luffy.jpg
+    - images/zuko.jpg
+    - images/waterboy.jpg
+    - images/sukuna.jpg
+    - images/akaza.jpg
+    - images/deddy.jpg
+    - images/flame.jpg
+    - images/pinkcrop.jpg
+    - images/hellboy.jpg
+    - images/goku.jpg
+    - images/title.png
+    - images/wallet.png
+    - images/metamask.png
+    - images/coinbby.png
+    - images/trustwallet.png
+    
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
