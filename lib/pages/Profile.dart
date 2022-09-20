@@ -194,28 +194,6 @@ class Profile extends StatelessWidget {
                     SizedBox(
                       height: 30,
                     ),
-                    Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                      Text(
-                        'Don\'t have a wallet account yet?',
-                        style: TextStyle(
-                          fontFamily: 'Retro',
-                          fontSize: 10,
-                          color: Colors.white,
-                        ),
-                      ),
-                      TextButton(
-                        style: ButtonStyle(),
-                        onPressed: () {},
-                        child: const Text(
-                          'Learn more',
-                          style: TextStyle(
-                            fontFamily: 'Retro',
-                            fontSize: 10,
-                            color: Colors.orange,
-                          ),
-                        ),
-                      ),
-                    ])
                   ],
                 ),
               ),

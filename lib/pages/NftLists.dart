@@ -99,32 +99,35 @@ class NftDetails extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12.0),
                         child: Container(
                           height: 130,
-                          width: 150,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
                               Container(
-                                margin: EdgeInsets.symmetric(
-                                  horizontal: 40,
-                                  vertical: 3,
-                                ),
                                 child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                    backgroundColor:
-                                        Color.fromARGB(255, 255, 109, 0),
+                                  style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all(
+                                        Color.fromARGB(255, 255, 109, 0)),
                                   ),
-                                  onPressed: () {},
+                                  onPressed: null,
                                   child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Image(
-                                        height: 22,
-                                        width: 22,
-                                        image: AssetImage(babies.ethereumImage),
+                                      Expanded(
+                                        child: Image.asset(
+                                          'images/eth.png',
+                                          height: 30,
+                                          width: 30,
+                                          fit: BoxFit.contain,
+                                        ),
                                       ),
-                                      Text(
-                                        babies.priceBaby,
-                                        style: TextStyle(fontFamily: 'Retro'),
+                                      Expanded(
+                                        child: Text(
+                                          babies.priceBaby,
+                                          style: TextStyle(
+                                            fontFamily: 'Retro',
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -137,7 +140,6 @@ class NftDetails extends StatelessWidget {
                               image: AssetImage(babies.babyImage),
                               fit: BoxFit.cover,
                             ),
-                            border: Border.all(color: Colors.black12, width: 1),
                           ),
                         ),
                       ),

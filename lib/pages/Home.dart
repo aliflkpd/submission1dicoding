@@ -195,6 +195,7 @@ class Home extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
+                    flex: 1,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -224,45 +225,51 @@ class Home extends StatelessWidget {
                             child: Image.asset(
                               'images/pandkarafuru-nojacket.jpg',
                               height: 235,
-                              width: 235,
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                        Container(
-                            margin: EdgeInsets.only(top: 20),
-                            height: 50,
-                            width: 235,
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 255, 109, 0),
-                                borderRadius: BorderRadius.circular(8)),
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 45),
-                                  child: Image.asset(
-                                    'images/eth.png',
-                                    height: 45,
-                                    width: 40,
-                                  ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        ElevatedButton(
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(
+                              Color.fromARGB(255, 255, 109, 0),
+                            ),
+                          ),
+                          onPressed: null,
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Image.asset(
+                                  'images/eth.png',
+                                  height: 50,
+                                  width: 50,
+                                  fit: BoxFit.contain,
                                 ),
-                                Text(
+                              ),
+                              Expanded(
+                                child: Text(
                                   '24.00',
                                   style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
                                     fontFamily: 'Retro',
+                                    color: Colors.white,
+                                    fontSize: 18,
                                   ),
                                 ),
-                              ],
-                            ))
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Container(
                       margin: EdgeInsets.only(left: 25),
-                      padding: EdgeInsets.only(left: 10),
+                      padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(4),
                         color: Color.fromARGB(255, 84, 84, 84).withOpacity(0.4),
@@ -270,64 +277,68 @@ class Home extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              top: 20,
-                              left: 10,
-                            ),
-                            child: Text(
-                              'Baby KARAFURU',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 22,
-                                fontFamily: 'Retro',
-                              ),
+                          Text(
+                            'Baby KARAFURU',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontFamily: 'Retro',
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              top: 20,
-                              left: 10,
-                            ),
-                            child: Text(
-                              'Our brand new character with Karafuru as our collaboration partner in our character making project.',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12,
-                                fontFamily: 'Retro',
-                              ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Text(
+                            'Our brand new character with Karafuru as our collaboration partner in our character making project.',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 12,
+                              fontFamily: 'Retro',
                             ),
                           ),
                           SizedBox(height: 35),
-                          Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Image.asset(
-                                  'images/karafuru.png',
-                                  height: 30,
-                                  width: 30,
-                                  fit: BoxFit.cover,
+                          Container(
+                            height: 80,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Expanded(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Image.asset(
+                                      'images/karafuru.png',
+                                      fit: BoxFit.contain,
+                                      height: 50,
+                                      width: 50,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                'X',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontFamily: 'Retro',
+                                Expanded(
+                                  flex: 0,
+                                  child: Text(
+                                    'X',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontFamily: 'Retro',
+                                      fontSize: 20,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(10),
-                                child: Image.asset(
-                                  'images/icontxp.png',
-                                  height: 30,
-                                  width: 30,
-                                  fit: BoxFit.cover,
+                                Expanded(
+                                  flex: 1,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Image.asset(
+                                      'images/icontxp.png',
+                                      height: 50,
+                                      width: 50,
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ],
                       ),
