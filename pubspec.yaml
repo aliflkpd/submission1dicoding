@@ -58,46 +58,7 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - images/NEWBANNER.jpg
-    - images/akashi.jpg
-    - images/alifwhite.jpg
-    - images/evos.jpg
-    - images/pinkninjagirl.jpg
-    - images/datamine.jpg
-    - images/catonthehead.jpg
-    - images/gravityninja.jpg
-    - images/babydomination-text-orangebg.jpg
-    - images/pandkarafuru-nojacket.jpg
-    - images/karafuru.png
-    - images/icontxp.png
-    - images/NEWBANNER2.jpg
-    - images/eth.png
-    - images/footer.jpg
-    - images/artbaby.jpg
-    - images/alif2.jpg
-    - images/bandaged.jpg
-    - images/arash.jpg
-    - images/jefri.jpg
-    - images/kawaki.jpg
-    - images/mario.jpg
-    - images/kakashi.jpg
-    - images/kagura.jpg
-    - images/lingard.jpg
-    - images/luffy.jpg
-    - images/zuko.jpg
-    - images/waterboy.jpg
-    - images/sukuna.jpg
-    - images/akaza.jpg
-    - images/deddy.jpg
-    - images/flame.jpg
-    - images/pinkcrop.jpg
-    - images/hellboy.jpg
-    - images/goku.jpg
-    - images/title.png
-    - images/wallet.png
-    - images/metamask.png
-    - images/coinbby.png
-    - images/trustwallet.png
+    - images/
     
   # To add assets to your application, add an assets section, like this:
   # assets:

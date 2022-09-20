@@ -194,72 +194,73 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('   Baby Of The Day',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 15,
-                            fontFamily: 'Retro',
-                          )),
-                      Padding(padding: EdgeInsets.all(10)),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Color.fromARGB(255, 80, 198, 216)
-                                  .withOpacity(0.4),
-                              spreadRadius: 8,
-                              blurRadius: 5,
-                              offset: Offset(2, 2),
-                            )
-                          ],
-                        ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(3),
-                          child: Image.asset(
-                            'images/pandkarafuru-nojacket.jpg',
-                            height: 235,
-                            width: 235,
-                            fit: BoxFit.cover,
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('   Baby Of The Day',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontFamily: 'Retro',
+                            )),
+                        Padding(padding: EdgeInsets.all(10)),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromARGB(255, 80, 198, 216)
+                                    .withOpacity(0.4),
+                                spreadRadius: 8,
+                                blurRadius: 5,
+                                offset: Offset(2, 2),
+                              )
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(3),
+                            child: Image.asset(
+                              'images/pandkarafuru-nojacket.jpg',
+                              height: 235,
+                              width: 235,
+                              fit: BoxFit.cover,
+                            ),
                           ),
                         ),
-                      ),
-                      Container(
-                          margin: EdgeInsets.only(top: 20),
-                          height: 50,
-                          width: 235,
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 255, 109, 0),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 45),
-                                child: Image.asset(
-                                  'images/eth.png',
-                                  height: 45,
-                                  width: 40,
+                        Container(
+                            margin: EdgeInsets.only(top: 20),
+                            height: 50,
+                            width: 235,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 255, 109, 0),
+                                borderRadius: BorderRadius.circular(8)),
+                            child: Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 45),
+                                  child: Image.asset(
+                                    'images/eth.png',
+                                    height: 45,
+                                    width: 40,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                '24.00',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontFamily: 'Retro',
+                                Text(
+                                  '24.00',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontFamily: 'Retro',
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ))
-                    ],
+                              ],
+                            ))
+                      ],
+                    ),
                   ),
                   Expanded(
                     child: Container(
-                      // height: 500,
                       margin: EdgeInsets.only(left: 25),
                       padding: EdgeInsets.only(left: 10),
                       decoration: BoxDecoration(
@@ -338,26 +339,6 @@ class Home extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            // Container(
-            //   child: Stack(
-            //     children: [
-            //       Image.asset('images/giftmint.jpg'),
-            //       SizedBox(
-            //         height: 150,
-            //       ),
-            //       Container(
-            //         color: Colors.white,
-            //         child: Padding(
-            //           padding: const EdgeInsets.symmetric(
-            //             vertical: 30,
-            //             horizontal: 120,
-            //           ),
-            //           child: Text('data'),
-            //         ),
-            //       ),
-            //     ],
-            //   ),
-            // ),
 
             Container(
               height: 70,
